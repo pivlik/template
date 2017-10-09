@@ -1,0 +1,42 @@
+include ../mixins/_bank
+
+.l-mortgage.j-mortgage
+    form(action="/test/json/mortgage.json")
+        .l-mortgage__range-slider
+            .b-range-slider.j-range-sliders
+                .b-range-slider__base
+                    .j-slider(
+                        data-min="500000"
+                        data-max="7500000"
+                        data-from="1000000"
+                        data-postfix=" руб."
+                    )
+                .b-range-slider__input
+                    label(for="mortgage-1") Первоначальный взнос, руб
+                    input(id="mortgage-1" type="text")
+
+        .l-mortgage__range-slider
+            .b-range-slider.j-range-sliders
+                .b-range-slider__base
+                    .j-slider(
+                        data-min="5"
+                        data-max="15"
+                        data-from="8"
+                        data-postfix=" лет"
+                    )
+                .b-range-slider__input
+                    label(for="mortgage-2") Период ипотеки, лет
+                    input(id="mortgage-2" type="text")
+
+    .l-mortgage__banks
+        .l-mortgage__cnt
+            .l-mortgage__banks-item
+                +bank('/img/banks/1.png')
+            .l-mortgage__banks-item
+                +bank('/img/banks/2.png')
+            .l-mortgage__banks-item
+                +bank('/img/banks/3.png')
+            .l-mortgage__banks-item
+                +bank('/img/banks/3.png', true)
+        .l-mortgage__ajax
+            include ../blocks/_ajax-loader

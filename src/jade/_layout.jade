@@ -1,0 +1,31 @@
+include mixins/all-mixins
+doctype html
+html(lang='ru')
+    head
+        meta(charset="UTF-8")
+        meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+
+        meta(name="format-detection" content="telephone=no")
+        link(rel='icon' sizes='192x192' href='/favicons/touch-icon-192x192.png')
+
+        link(rel='stylesheet' href="/styles/app.css")
+
+        block title
+            title Заголовок по умолчанию
+        <!--[if lte IE 9]>
+        link(rel='stylesheet' href="/styles/ie.css")
+        <![endif]-->
+    body
+        .l-wrap
+            //header.l-header
+                h2 шапка
+
+            main.l-main
+                block content
+                    h2 контент
+
+            //footer.l-footer
+                h2 подвал
+
+        include ../../www/img/sprite/sprite.svg
+        script(src="/scripts/lib/requirejs/require.min.js" data-main="/scripts/config.js")

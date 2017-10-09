@@ -1,0 +1,69 @@
+.l-construction-progress.j-construction-progress
+    .b-construction-progress
+        h2.b-construction-progress__ttl Ход строительства
+        .b-construction-progress__row
+            form(action="/test/json/construction-progress.json" method="GET")
+                .b-construction-progress__selects
+                    .b-construction-progress__select
+                        select(name="period")
+                            option(value="dezember") Декабрь
+                            option(value="november") Ноябрь
+                            option(value="oktober") Октябрь
+                            option(value="september") Сентябрь
+                            option(value="august") Август
+                            option(value="juli") Июль
+                            option(value="juni") Июнь
+                            option(value="mai") Май
+                            option(value="april") Апрель
+                            option(value="marz") Март
+                            option(value="februar") Февраль
+                            option(value="januar") Январь
+                    .b-construction-progress__select
+                        select(name="gallery")
+                            option(value="1") копус 1
+                            option(value="2") копус 2
+                            option(value="3") копус 3
+                            option(value="4") копус 4
+            .b-construction-progress__progress
+                include ../blocks/_progress-bar
+                // если дом сдан, то до .b-construction-progress__deadline добавить .is-inactive
+                .b-construction-progress__deadline Срок сдачи III кв. 2017г.
+
+        .b-construction-progress__row
+            .b-construction-progress__gallery
+                include ../blocks/_gallery-construction-progress
+            .b-construction-progress__content.b-typo-reset
+                p Рыбный текст обычно пахнет рыбами и стариками, которые их ловят.
+                ul
+                    li ненумерованный список
+                    li ненумерованный список
+                    li ненумерованный список
+                    li ненумерованный список
+                ol
+                    li противоположный ненумерованому списоку
+                    li противоположный ненумерованому списоку
+                    li противоположный ненумерованому списоку
+                    li противоположный ненумерованому списоку
+                    li противоположный ненумерованому списоку
+                table
+                    thead
+                        tr
+                            td Наименование
+                            td Описание
+                            td Значение
+                    tbody
+                        tr
+                            td Водопоровод
+                            td По нему течет вода
+                            td H<sub>2</sub>O
+                    tfoot
+                        tr
+                            td
+                                b Итого
+                            td(colspan="2" style="text-align: right") 1 200 000 рублей
+
+    #gallery-popup.mfp-hide.b-popup
+        a(href="javascript:;" title="Закрыть").b-popup__close Закрыть попап
+        .b-popup__cnt
+
+    include ../blocks/_ajax-loader
