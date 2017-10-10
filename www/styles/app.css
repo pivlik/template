@@ -1632,7 +1632,7 @@ textarea {
 html {
   font-size: 16px;
   line-height: 24px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 html.font-loaded {
@@ -1950,6 +1950,11 @@ a[href^='tel:'],a[href^='mailto:'] {
 
 .b-gallery__wr {
   height: 50vh;
+}
+
+.b-header__menu-logo {
+  margin-top: 19px;
+  margin-bottom: 21px;
 }
 
 h2 {

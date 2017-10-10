@@ -1,10 +1,10 @@
 {
-  "name": "kelnik-boilerplate",
-  "version": "2.2.12",
-  "author": "Vladimir Pavlikov <theitzamna@gmail.com>",
+  "name": "temp",
+  "version": "",
+  "author": "Pasha <p.klimin@yandex.ru>",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/kelnik-internal/boilerplate"
+    "url": "https://github.com/pivlik/template"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",

@@ -16,10 +16,8 @@ html(lang='ru')
         link(rel='stylesheet' href="/styles/ie.css")
         <![endif]-->
     body
-        .l-wrap
-            //header.l-header
-                h2 шапка
-
+        .container
+            include blocks/_header
             main.l-main
                 block content
                     h2 контент
