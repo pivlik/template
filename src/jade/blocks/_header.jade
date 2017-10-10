@@ -5,7 +5,7 @@ header.b-header
             img(src='/img/logo.png').col-6
             .b-header__logo-title.col-push-1.col-6 Кулинарный блог Елены
         nav.b-header__nav
-            ul.b-header__nav-menu.col-7.col-push-1
+            ul.b-header__nav-menu.col-9.col-push-1
                 li.b-header__nav-menu-item
                     a(href='').b-header__nav-menu-item-link
                         |Рецепты
@@ -18,3 +18,7 @@ header.b-header
                 li.b-header__nav-menu-item
                     a(href='').b-header__nav-menu-item-link
                         |Контакты
+        form(action='' ).b-header_search-form.col-push-3.col-6
+            input(type='search' placeholder='поиск по сайту').b-header__main-info_search_input
+            button(type='submit').b-header__main-info_search_icon
+                +svg('SVGs-01')

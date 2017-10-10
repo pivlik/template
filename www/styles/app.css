@@ -1952,6 +1952,10 @@ a[href^='tel:'],a[href^='mailto:'] {
   height: 50vh;
 }
 
+.b-header {
+  color: #193349;
+}
+
 .b-header__menu-logo {
   margin-top: 19px;
   margin-bottom: 21px;
@@ -1959,9 +1963,51 @@ a[href^='tel:'],a[href^='mailto:'] {
 
 .b-header__logo-title {
   font-size: 18px;
-  color: #193349;
   font-weight: 700;
   margin-top: 14px;
+}
+
+.b-header__nav-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-top: 13px;
+}
+
+.b-header__nav-menu-item-link {
+  color: #193349;
+  font-weight: 700;
+  font-size: 16px;
+  border-bottom: 1px dotted #193349;
+}
+
+.b-header__main-info_search_input {
+  margin-top: 7px;
+  padding: 10px;
+  width: 302px;
+  height: 42px;
+  font-size: 15px;
+  border-radius: 8px;
+  background-color: #e8eeef;
+  border: none;
+}
+
+.b-header__main-info_search_icon {
+  width: 0;
+  border: 0;
+  padding: 0;
+}
+
+.b-header__main-info_search_icon .b-icon__SVGs-01 {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  fill: rgba(112, 188, 78, 0.83);
+  left: 266px;
+  bottom: 30px;
 }
 
 h2 {
