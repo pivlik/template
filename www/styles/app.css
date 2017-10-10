@@ -1636,7 +1636,7 @@ html {
 }
 
 html.font-loaded {
-  font-family: "opensans", sans-serif;
+  font-family: "muller", sans-serif;
 }
 
 h1 {
@@ -1957,6 +1957,13 @@ a[href^='tel:'],a[href^='mailto:'] {
   margin-bottom: 21px;
 }
 
+.b-header__logo-title {
+  font-size: 18px;
+  color: #193349;
+  font-weight: 700;
+  margin-top: 14px;
+}
+
 h2 {
   color: red;
   font-size: 20px;
@@ -1976,6 +1983,18 @@ h2 {
 
 @font-face {
   display-font:swap;font-family:"ruble";src:url("/fonts/ruble/ruble-webfont.woff2") format("woff2"), url("/fonts/ruble/ruble-webfont.woff") format("woff");
+}
+
+@font-face {
+  display-font:swap;font-family:"muller";src:url("/fonts/Muller/MullerRegular.woff2") format("woff2"), url("/fonts/Muller/MullerRegular.woff") format("woff");font-weight:400;
+}
+
+@font-face {
+  display-font:swap;font-family:"muller";src:url("/fonts/Muller/MullerBold.woff2") format("woff2"), url("/fonts/Muller/MullerBold.woff") format("woff");font-weight:700;
+}
+
+@font-face {
+  display-font:swap;font-family:"muller";src:url("/fonts/Muller/MullerRegularItalic.woff2") format("woff2"), url("/fonts/Muller/MullerRegularItalic.woff") format("woff");font-weight:400;font-style:italic;
 }
 
 @media only screen and (min-width: 670px) {

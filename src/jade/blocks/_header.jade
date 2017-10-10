@@ -1,6 +1,20 @@
 include ../mixins/all-mixins
 header.b-header
-    .b-header__menu.col-push-1.col-35
+    .b-header__menu.col-push-1.col-35.row
         .b-header__menu-logo
-            img(src='/img/logo.png')
-            .b-header__logo-title Кулинарный блог Елены
+            img(src='/img/logo.png').col-6
+            .b-header__logo-title.col-push-1.col-6 Кулинарный блог Елены
+        nav.b-header__nav
+            ul.b-header__nav-menu.col-7.col-push-1
+                li.b-header__nav-menu-item
+                    a(href='').b-header__nav-menu-item-link
+                        |Рецепты
+                li.b-header__nav-menu-item
+                    a(href='').b-header__nav-menu-item-link
+                        |Новости
+                li.b-header__nav-menu-item
+                    a(href='').b-header__nav-menu-item-link
+                        |Обо мне
+                li.b-header__nav-menu-item
+                    a(href='').b-header__nav-menu-item-link
+                        |Контакты
