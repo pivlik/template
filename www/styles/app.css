@@ -1912,7 +1912,7 @@ a[href^='tel:'],a[href^='mailto:'] {
   display: -ms-inline-flexbox;
   display: inline-flex;
   border: 4px solid black;
-  background-color: #5bac26;
+  background-color: #70bc4e;
   width: 33.333%;
   height: 100%;
 }
@@ -1945,7 +1945,7 @@ a[href^='tel:'],a[href^='mailto:'] {
 }
 
 .b-gallery-slick__dots .slick-active button {
-  background-color: #5bac26;
+  background-color: #70bc4e;
 }
 
 .b-gallery__wr {
@@ -2010,9 +2010,34 @@ a[href^='tel:'],a[href^='mailto:'] {
   bottom: 30px;
 }
 
-h2 {
-  color: red;
-  font-size: 20px;
+.b-index {
+  background-image: "/img/bg-pattern.png";
+  background-size: cover;
+  height: 1000px;
+  width: 100px;
+}
+
+.b-index__menu-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.b-index__menu-list-item-link {
+  -ms-flex-align: center;
+  align-items: center;
+  width: 302px;
+  height: 50px;
+  display: block;
+  background-color: #70bc4e;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 4px 10px rgba(112, 188, 78, 0.8);
 }
 
 @font-face {
