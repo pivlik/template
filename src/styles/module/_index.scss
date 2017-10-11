@@ -1,6 +1,9 @@
-.b-index{
-  background-image: ('/img/bg-pattern.png');
+body{
+  background-image: url('/img/bg-pattern.png');
   background-size: cover;
+}
+.b-index__wrap{
+  margin-top: 40px;
 }
 .b-index__menu-list{
   display: flex;
@@ -19,4 +22,45 @@
   text-align: center;
   line-height: 50px;
   box-shadow: 0 4px 10px rgba($green, 0.8);
+}
+.b-index__nav-line-list{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 35px;
+}
+.b-index__nav-line-list-item-link{
+  color: $black-header;
+  font-size: 14px;
+}
+.b-index__nav-line-list-item-link-icon{
+  .b-icon__SVGs-02{
+    fill: $green;
+    width: 18px;
+    height: 15px;
+    top: 2px;
+    position: relative;
+  }
+}
+.b-index__nav-line-list-item{
+  position: relative;
+  margin-right: 20px;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -11px;
+    top: 11px;
+    width: 5px;
+    height: 5px;
+    background-color: $green;
+    border-bottom: 1px solid $green;
+    border-left: 1px solid $green;
+  }
+  &:last-child {
+    color: $gray;
+    opacity: 0.7;
+    &:after {
+      display: none;
+    }
+  }
 }

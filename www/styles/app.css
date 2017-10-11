@@ -1731,7 +1731,7 @@ a {
 .b-typo-reset ol li:before {
   counter-increment: list;
   content: counter(list) ".";
-  color: #ccc;
+  color: #989898;
   padding-right: 5px;
   position: absolute;
   top: 0;
@@ -1741,7 +1741,7 @@ a {
 .b-typo-reset ul li:before {
   content: '•';
   padding-right: 5px;
-  color: #ccc;
+  color: #989898;
   position: absolute;
   top: 0;
   left: 0;
@@ -2010,11 +2010,13 @@ a[href^='tel:'],a[href^='mailto:'] {
   bottom: 30px;
 }
 
-.b-index {
-  background-image: "/img/bg-pattern.png";
+body {
+  background-image: url("/img/bg-pattern.png");
   background-size: cover;
-  height: 1000px;
-  width: 100px;
+}
+
+.b-index__wrap {
+  margin-top: 40px;
 }
 
 .b-index__menu-list {
@@ -2038,6 +2040,54 @@ a[href^='tel:'],a[href^='mailto:'] {
   text-align: center;
   line-height: 50px;
   box-shadow: 0 4px 10px rgba(112, 188, 78, 0.8);
+}
+
+.b-index__nav-line-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  margin-bottom: 35px;
+}
+
+.b-index__nav-line-list-item-link {
+  color: #193349;
+  font-size: 14px;
+}
+
+.b-index__nav-line-list-item-link-icon .b-icon__SVGs-02 {
+  fill: #70bc4e;
+  width: 18px;
+  height: 15px;
+  top: 2px;
+  position: relative;
+}
+
+.b-index__nav-line-list-item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.b-index__nav-line-list-item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -11px;
+  top: 11px;
+  width: 5px;
+  height: 5px;
+  background-color: #70bc4e;
+  border-bottom: 1px solid #70bc4e;
+  border-left: 1px solid #70bc4e;
+}
+
+.b-index__nav-line-list-item:last-child {
+  color: #989898;
+  opacity: 0.7;
+}
+
+.b-index__nav-line-list-item:last-child:after {
+  display: none;
 }
 
 @font-face {
