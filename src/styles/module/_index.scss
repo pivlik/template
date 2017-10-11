@@ -64,3 +64,28 @@ body{
     }
   }
 }
+.b-index__articles-title{
+  color: $green;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+.b-index__articles-artic-image{
+  float: left;
+}
+.b-index__articles-title-little{
+  font-size: 24px;
+  font-weight: 700;
+  color: $green;
+}
+.b-index__articles-artic-content{
+  margin-left: 10px;
+}
+.b-index__articles-artic-content-text{
+  font-size: 16px;
+  color: $black;
+}
+.b-index__articles-artic-link{
+  font-weight: 700;
+  color: $black;
+}

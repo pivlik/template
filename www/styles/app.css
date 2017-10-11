@@ -2090,6 +2090,37 @@ body {
   display: none;
 }
 
+.b-index__articles-title {
+  color: #70bc4e;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 45px;
+}
+
+.b-index__articles-artic-image {
+  float: left;
+}
+
+.b-index__articles-title-little {
+  font-size: 24px;
+  font-weight: 700;
+  color: #70bc4e;
+}
+
+.b-index__articles-artic-content {
+  margin-left: 10px;
+}
+
+.b-index__articles-artic-content-text {
+  font-size: 16px;
+  color: #000;
+}
+
+.b-index__articles-artic-link {
+  font-weight: 700;
+  color: #000;
+}
+
 @font-face {
   display-font:swap;font-family:"opensans";src:url("/fonts/OpenSans/Regular/OpenSans-Regular.woff2") format("woff2"), url("/fonts/OpenSans/Regular/OpenSans-Regular.woff") format("woff");font-weight:400;
 }
